@@ -24,7 +24,7 @@ jruby has_constants_test.rb
 
 What we confirm in the test that under JRuby `PConstants` is seen as a ruby module, and we only need to include the module to implement the interface. But it could have possible namespace issues.
 
-[pconstants]
+[pconstants]:https://github.com/processing/processing/blob/master/core/src/processing/core/PConstants.java
 [propane]:https://github.com/ruby-processing/propane
 [jruby_art]:https://ruby-processing.github.io/JRubyArt/
 [polyglot]:https://github.com/takari/polyglot-maven
