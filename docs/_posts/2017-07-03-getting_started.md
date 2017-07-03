@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "1st Steps"
+title:  "Using constants from a java interface, in jruby"
 date:   2017-07-03 07:34:13
 categories: pconstants update
 ---
+Somewhat inpired by [ruby koans](http://rubykoans.com/) I believe the only way you will really get to get deep understanding of [JRubyArt][jruby_art] and [propane][propane] is by understanding the internals. such as how we access vanilla processing PConstants.
 
 ### Requirements
 
@@ -568,3 +569,6 @@ public interface PConstants {
 
 
 ```
+
+[jruby_art]:https://github.com/ruby-processing/JRubyArt
+[propane]:https://github.com/ruby-processing/propane
