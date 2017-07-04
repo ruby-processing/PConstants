@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Using constants from a java final class, in jruby"
-date:   2017-07-03 07:34:13
+date:   2017-07-04 07:34:13
 categories: pconstants update
 ---
-Somewhat inspired by [ruby koans](http://rubykoans.com/) I believe the only way you will really get to get deep understanding of [JRubyArt][jruby_art] and [propane][propane] is by understanding the internals. Here we compile `PConstants.java` into a library and access the constants from ruby. We use minitest to explore the constants see [github][distro].
+Using an interface to supply global constants is somewhat frowned upon (actually as is any global constants file). The slightly less toxic version is to create a final class as we have below. It is slightly harder to access the constants in jruby but at least you are not poluting the global namespace.
 
 ### Requirements
 
