@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-`PConstants.java` is used in vanilla processing to provide across project access to constants. This is done by creating and interface with static fields a method that has come under much [criticism][criticism]. There is not much point in being critical about we just have to get on with it. See [github][distro].
+`PConstants.java` is used in vanilla processing to provide across project access to constants. This is done by creating and interface with static fields a method that has come under much [criticism][criticism]. There is not much point in being critical about we just have to get on with it. However in this project we explore that alternatives of final class and enum. See [github][distro].
 
 [jruby_art]: https://ruby-processing.github.io/index.html
 [propane]:https://ruby-processing.github.io/propane/
