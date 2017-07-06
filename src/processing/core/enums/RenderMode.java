@@ -1,10 +1,10 @@
 /* -*- mode: java; c-basic-offset: 4; indent-tabs-mode: nil -*- */
 
  /*
-  Use of enums is preferred for global access, however the general 
+  Use of enums is preferred for global access, however the general
   recommendation is to include constants in classes that use them.
  */
-package processing.core;
+package processing.core.enums;
 
 public enum RenderMode {
     JAVA2D("processing.awt.PGraphicsJava2D"),
@@ -17,8 +17,8 @@ public enum RenderMode {
 
     RenderMode(String val) {
         this.mode = val;
-    } 
-    
+    }
+
     private final String mode;
 
     public String renderMode(){

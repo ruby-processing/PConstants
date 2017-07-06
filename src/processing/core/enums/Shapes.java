@@ -4,7 +4,7 @@
   Use of enums is preferred for global access, however the general
   recommendation is to include constants in classes that use them.
  */
-package processing.core;
+package processing.core.enums;
 
 public enum Shapes {
     VERTEX(0),

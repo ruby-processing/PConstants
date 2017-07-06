@@ -4,16 +4,26 @@ require_relative 'test_helper'
 require_relative '../lib/pconstants'
 
 module Constants
-  java_import 'processing.core.Axis'
-  java_import 'processing.core.RenderMode'
-  java_import 'processing.core.Shapes'
+  include_package 'processing.core.enums'
+end
+
+# P3D = Constants::RenderMode::P3D
+# X = Constants::Axis::X
+# CURVE_VERTEX = Constants::Shapes::CURVE_VERTEX
+
+class Object
+  class << self
+    alias :const_missing_old :const_missing
+    def const_missing c
+      Constants.const_get c
+    end
+  end
 end
 
 class SpecTest < Minitest::Test
-  include Constants
 
   def test_constants_is_a_module
-    assert_equal Module, Constants.class, 'Constants not recognized as a module'
+    assert_equal Class, Axis.class, 'Constants not recognized as a module'
   end
 
   def test_p3d
