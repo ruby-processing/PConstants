@@ -4,7 +4,7 @@ title:  "Using constant_missing, to access java enum in jruby"
 date:   2017-07-06 06:34:13
 categories: pconstants update
 ---
-It has been reported that `:constant_missing` could be useful in accessing java enums, but my experiments make me doubt its value.
+It has been reported that `:constant_missing` could be useful in accessing java enums, but [my experiments][github] make me doubt its value.
 
 ### Requirements
 
@@ -140,6 +140,6 @@ public enum Shapes {
 
 ```
 
-[distro]:https://github.com/ruby-processing/PConstants
+[github]:https://github.com/ruby-processing/PConstants
 [jruby_art]:https://github.com/ruby-processing/JRubyArt
 [propane]:https://github.com/ruby-processing/propane
