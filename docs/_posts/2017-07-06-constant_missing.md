@@ -4,7 +4,7 @@ title:  "Using constant_missing, to access java enum in jruby"
 date:   2017-07-06 06:34:13
 categories: pconstants update
 ---
-It has been reported that `:constant_missing` could be useful in accessing java enums, but [my experiments][github] make me doubt its value.
+It has been reported that `:constant_missing` could be useful in accessing java enums, but [my experiments][github] make me doubt its value. See prevoius post for a more convential approach. As far as I can tell the redefining of :constant missing is somewhat similar to `include Constants` module with in this case `Axis`, `RenderMode` and `Shapes` as the available constants _you still need to access the actual enums_ by prefix the enum name `Axis::X`
 
 ### Requirements
 
