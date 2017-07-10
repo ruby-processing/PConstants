@@ -34,6 +34,6 @@ git checkout enum # Where there are enum version of seleceted PConstants (the us
 git checkout constant_missing # does not seem to me to have any advantages over include module method
 
 [pconstants]:https://github.com/processing/processing/blob/master/core/src/processing/core/PConstants.java
-[propane]:https://github.com/ruby-processing/propane
+[propane]:https://ruby-processing.github.io/propane/
 [jruby_art]:https://ruby-processing.github.io/JRubyArt/
 [polyglot]:https://github.com/takari/polyglot-maven
